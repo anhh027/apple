@@ -1,6 +1,6 @@
 $(function(){
     var $btn=$(".nav-box .min-nav .btn .navbar-toggle");
-    $btn.click(function(){
+    $btn.click(function(){ 
         $(".nav-box .max-nav").slideToggle();
     })
     //banner轮播效果
