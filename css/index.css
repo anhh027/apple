@@ -4,6 +4,9 @@
 .show {
   display: block;
 }
+a,button,div{
+  -webkit-tap-highlight-color:transparent;
+}
 body {
   font-size: 17px;
   line-height: 1.45;
@@ -21,7 +24,8 @@ html {
 /*header*/
 .nav-box .max-nav a span,
 .nav-box .min-nav a span {
-  height: 44px;
+  height: 34px;
+  line-height: 34px;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center center;
@@ -109,7 +113,7 @@ html {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 }
 .banner .imgs .imgbao .ban1 {
   background-image: url("../images/banner4.jpg");
@@ -128,7 +132,7 @@ html {
   height: 40px;
   position: absolute;
   bottom: 10px;
-  left: 50%;
+  left: 53%;
   margin-left: -70px;
   padding: 2px;
   line-height: 40px;
@@ -479,6 +483,9 @@ section .ac-gf-footer-legal:before {
 }
 @media screen and (max-width: 768px) {
   /*header*/
+  a,button,div{
+  -webkit-tap-highlight-color:transparent;
+}
   .nav-box .max-nav {
     display: none;
     margin-left: -15px;
@@ -490,50 +497,53 @@ section .ac-gf-footer-legal:before {
     margin: 0 10px 0 46px;
     border-bottom: 1px solid #ccc;
   }
-  .nav-box .max-nav a:last-child {
+  .nav-box .max-nav a:nth-last-of-type(1) {
     border: none;
     display: none;
   }
+  /* .nav-box .max-nav a:nth-last-of-type(2) {
+    border: none;
+  } */
   .nav-box .max-nav a .mac {
     background-size: 31px 44px;
     background-image: url("../images/mac.svg");
-    width: 1.72222em;
+    width: 2.72222em;
     max-width: 52.7px;
   }
   .nav-box .max-nav a .ipad {
     background-size: 30px 44px;
     background-image: url("../images/ipad.svg");
-    width: 1.66667em;
+    width: 2.66667em;
     max-width: 51px;
   }
   .nav-box .max-nav a .iphone {
     background-size: 44px 44px;
     background-image: url("../images/iphone.svg");
-    width: 1.72222em;
+    width: 2.72222em;
     max-width: 52.7px;
   }
   .nav-box .max-nav a .watch {
     background-size: 40px 44px;
     background-image: url("../images/watch.svg");
-    width: 1.72222em;
+    width: 2.72222em;
     max-width: 52.7px;
   }
   .nav-box .max-nav a .tv {
     background-size: 30px 44px;
     background-image: url("../images/tv.svg");
-    width: 1.72222em;
+    width: 2.72222em;
     max-width: 52.7px;
   }
   .nav-box .max-nav a .music {
     background-size: 36px 44px;
     background-image: url("../images/music.svg");
-    width: 1.72222em;
+    width: 2.72222em;
     max-width: 52.7px;
   }
   .nav-box .max-nav a .support {
     background-size: 50px 44px;
     background-image: url("../images/image_large.svg");
-    width: 1.72222em;
+    width: 3.5em;
     max-width: 52.7px;
   }
   .nav-box .max-nav a .ss {
@@ -563,7 +573,7 @@ section .ac-gf-footer-legal:before {
     height: 40px;
     position: absolute;
     bottom: 1%;
-    left: 50%;
+    left: 55%;
     margin-left: -70px;
     padding: 2px;
     line-height: 40px;
